@@ -5,10 +5,10 @@
  * http://www.thepetedesign.com
  * Updated by Alexey Bochenko for using with 1+ folders3d
  * Create a 3D interactive object using images as frames
- * v1.2 include 3dhelper.js
+ * v1.2 include 3dhelper.interactive3d.js & interactive3d.php
  *
  * https://github.com/peachananr/interactive_3d (v1.1)
- *
+ * https://github.com/davilalexius/interactive3d(v1.2)
  * ========================================================== */
 intervals=[];
 !function($){
