@@ -135,18 +135,29 @@ intervals=[];
            setTimeout(function() {
           var img_name = src.split('/')[src.split('/').length-1]
           var directory = src.split('/').slice(0, -1).join("/");
+          if (directory!=window.currentSource&&window.currentSource!=undefined){
               clearTimeout(this);
-                  var new_frame = directory + "/" + img_name.split('_')[0] + "_" + (parseInt(cur_frame) + 1) + "." + img_name.split('.')[1]
-                  el.find("img.my-frame").attr("src", new_frame);
-                  cur_frame=parseInt(cur_frame) + 1;
+              clearingIntervals();
+          }
+           else {
+              var new_frame = directory + "/" + img_name.split('_')[0] + "_" + (parseInt(cur_frame) + 1) + "." + img_name.split('.')[1]
+              el.find("img.my-frame").attr("src", new_frame);
+              cur_frame = parseInt(cur_frame) + 1;
+          }
         },settings.speed);
       } else {
           setTimeout(function() {
           var img_name = src.split('/')[src.split('/').length-1]
           var directory = src.split('/').slice(0, -1).join("/")
+              if (directory!=window.currentSource&&window.currentSource!=undefined){
+                  clearTimeout(this);
+                  clearingIntervals();
+              }
+              else {
                   var new_frame = directory + "/" + img_name.split('_')[0] + "_" + 1 + "." + img_name.split('.')[1]
                   el.find("img.my-frame").attr("src", new_frame)
                   cur_frame = 1;
+              }
         },settings.speed);
       }
       if (x++ < (settings.frames - 1)) {

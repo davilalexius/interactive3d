@@ -1,5 +1,6 @@
 name3D="my3d_1.jpg";//имя первого файла в папке 3d
 demo=true;//отключите на своем сайте false
+currentSource=undefined;
 document.addEventListener('DOMContentLoaded', function() {
     jQuery(function($) {
         function scriptURL(filename) {
@@ -14,10 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     $("img.img3dclass").on("click", function(){
         var img3d=document.getElementById('my3d1');
-        var currentSource=this.src.split('/').slice(0, -1).join("/");
+       window.currentSource=this.src.split('/').slice(0, -1).join("/");
         this.src=img3d.src.split('/').slice(0, -1).join("/")+("/")+window.name3D;
-        img3d.src=currentSource+"/"+window.name3D;
-        countFrame(currentSource);
+        img3d.src=window.currentSource+"/"+window.name3D;
+        if($('#i3d').children('.images_cache').length > 0) {
+            $('.images_cache').remove();
+        }
+        countFrame(window.currentSource);
     });
         function countFrame(foolsrc) {
             var phpUrl=scriptURL("3dhelper.interactive3d")+"interactive3d.php";//путь к файлу php
