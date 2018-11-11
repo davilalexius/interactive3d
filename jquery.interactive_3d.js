@@ -1,14 +1,14 @@
 /* ===========================================================
  * jquery.interactive_3d.js v1.2
  * ===========================================================
- * Copyright 2013 Pete Rojwongsuriya.
- * http://www.thepetedesign.com
- * Updated by Alexey Bochenko for using with 1+ folders3d
  * Create a 3D interactive object using images as frames
+ * v1.1 Copyright 2013 Pete Rojwongsuriya.
+ * v1.1 http://www.thepetedesign.com
+ * v1.2 Updated by Alexey Bochenko for using with 1+ folders3d
  * v1.2 include 3dhelper.interactive3d.js & interactive3d.php
  *
- * https://github.com/peachananr/interactive_3d (v1.1)
- * https://github.com/davilalexius/interactive3d(v1.2)
+ * https://github.com/peachananr/interactive_3d (v1.1 Pete Rojwongsuriya)
+ * https://github.com/davilalexius/interactive3d(v1.2 Alexey Bochenko)
  * ========================================================== */
 intervals=[];
 !function($){

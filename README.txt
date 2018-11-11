@@ -1,4 +1,8 @@
 *********************************************************
+
+Create a 3D interactive object using images as frames
+
+*********************************************************
 Required code:
 <div id="i3d">
 <img id="my3d1" src="way of first 3d-file/my3d_1.jpg">
