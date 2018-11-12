@@ -1,8 +1,16 @@
 *********************************************************
 
 Create a 3D interactive object using images as frames
-
 *********************************************************
+You can say "Thank you" on my mail davilalexius@yahoo.com
+or donate some cash 
+paypal: paypal.me/davilalexius
+webmoney: Z376065341881 usd /R608365776183 rub / E200212647184 eur
+phone:+79257168292 (only for cash)
+It's a voluntary donation. 
+My family will be happy with any amount of cash from you, for the work done.
+*********************************************************
+
 Required code:
 <div id="i3d">
 <img id="my3d1" src="way of first 3d-file/my3d_1.jpg">
