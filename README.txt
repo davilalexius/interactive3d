@@ -7,7 +7,7 @@ or donate some cash
 paypal: paypal.me/davilalexius
 webmoney: Z376065341881 usd /R608365776183 rub / E200212647184 eur
 yandex-money:https://money.yandex.ru/to/410012738934950
-phone:+79257168292 (only for cash)
+phone:+79857494888 (only for cash)
 It's a voluntary donation. 
 My family will be happy with any amount of cash from you, for the work done.
 *********************************************************
